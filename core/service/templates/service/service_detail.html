@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block slider %}
+{% endblock %}
+{% block service %}
+{% if service %}
+<div class="container">
+	<h1>{{ service.name }}</h1>
+<p>{{ service.description }}</p>
+
+<div class="btn-box">
+ <a href="{% url 'contact' %}">{% trans 'Представлять на рассмотрение' %}</a>
+</div>
+</div>
+{% endif %}
+
+
+{% endblock %}
+{% block why %}
+{% endblock %}
+{% block client %}
+{% endblock %}
+{% block about %}
+{% endblock %}
+{% block contact %}
+{% endblock %}

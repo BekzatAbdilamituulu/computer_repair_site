@@ -1,3 +1,20 @@
+/* Ensure the dropdown menus open on hover */
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Adjust this if necessary */
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle::after {
+  display: none; /* Hide the default dropdown arrow */
+}
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;

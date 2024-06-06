@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html>
 
@@ -10,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
   <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/gif" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -29,256 +31,233 @@
   <link href="{% static 'css/style.css' %}" rel="stylesheet" />
   <!-- responsive style -->
   <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
   <div class="hero_area">
-    <!-- header section starts -->
-    <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid">
-          <div class="top_nav_container">
-            <a class="navbar-brand d-none d-lg-flex" href="">
-              <span>
-                IT Restart
-              </span>
-            </a>
-            <div class="contact_nav">
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Вызов : +999222222
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Электронная почта : demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
+<!-- header section starts -->
+<header class="header_section">
+  <div class="header_top">
+    <div class="container-fluid">
+      <div class="top_nav_container">
+        <a class="navbar-brand d-none d-lg-flex" href="{% url 'home' %}">
+          <span>
+            IT Restart
+          </span>
+        </a>
+        <div class="contact_nav">
+          <a href="{% url 'contact' %}">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              {% trans 'Вызов' %}: +999222222
+            </span>
+          </a>
+          <a href="{% url 'contact' %}">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              {% trans 'Электронная почта' %} demo@gmail.com
+            </span>
+            <span>
+<form action="{% url 'set_language' %}" method="post" id="languageForm">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select name="language" id="languageSelect" onchange="document.getElementById('languageForm').submit();">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}" data-flag-url="{% static 'images/' %}{{ language.code }}.png" {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }}
+            </option>
+        {% endfor %}
+    </select>
+</form>
+            </span>
+          </a>
         </div>
       </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand d-lg-none" href="">
-              <span>
-                IT Restart
-              </span>
-            </a>
+    </div>
+  </div>
+  <div class="header_bottom">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand d-lg-none" href="{% url 'home' %}">
+          <span>
+            IT Restart
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active dropdown">
+              <a class="nav-link pl-lg-0 dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {% trans 'Главная' %}
+              </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'service' %}" id="navbarDropdownService" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {% trans 'Услуги' %}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
+                <a class="dropdown-item" href="">Установка ОС
+Windows XP / 7 / 8.1 / 10</a>
+<hr>
+                <a class="dropdown-item" href="">Установка и настройка программ и утилит</a>
+                <hr>
+                                <a class="dropdown-item" href="">Восстановление данных</a>
+                <hr>
+                                <a class="dropdown-item" href="">Установка драйвера</a>
+                <hr>
+                                <a class="dropdown-item" href="">Подключение и настройка
+интернет, WI-FI роутера</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'about' %}" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {% trans 'О нас' %}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                <a class="dropdown-item" href="">Диагностика вашего компьютера - совершенно бесплатно; действующие скидки существенно экономят ваш бюджет.</a>
+                <hr>
+                <a class="dropdown-item" href="">Вам не нужно никуда ехать, мы сами приедем в удобное для вас время и место, осмотрим компьютер и произведем необходимые ремонтные работы.</a>
+                <hr>
+                 <a class="dropdown-item" href="">Мастер выезжает через 10-15 минут после звонка, и приступает к ремонту вашего компьютера уже через час.</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'why' %}" id="navbarDropdownWhy" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {% trans 'Почему мы' %}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownWhy">
+                <a class="dropdown-item" href="">После проведения работ мы гарантируем</a>
+                <hr>
+                <a class="dropdown-item" href="">Бесперебойную работу установленных
+программ.</a>
+              <a class="dropdown-item" href="">Безопасную работу пользователя в сети Интернет.</a>
+                <hr>
+                <a class="dropdown-item" href="">Полное восстановление работы компьютера после вируса.</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'contact' %}" id="navbarDropdownContact" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {% trans 'Связаться с нами' %}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownContact">
+                <a class="dropdown-item" href="">Остались вопросы?
+Звоните, с радостью на них ответим!
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
+</a>
+<hr>
+                <a class="dropdown-item" href="">Наши адреса: *****************</a>
+              </div>
+            </li>
+          </ul>
+          <form class="search_form">
+            <input type="text" class="form-control" placeholder="{% trans 'Поищи здесь...' %}">
+            <button class="" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
             </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- header section ends -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link pl-lg-0" href="{% url 'home' %}">Главная<span class="sr-only">(текущий)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'service' %}">Услуги</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'about' %}">О нас</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'why' %}">Почему мы</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'contact' %}">Связаться с нами</a>
-                </li>
-              </ul>
-              <from class="search_form">
-                <input type="text" class="form-control" placeholder="Поищи здесь...">
-                <button class="" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </from>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div class="slider-bg">
-        <img src="{% static 'images/slider-bg.jpg' %}" alt="">
-      </div>
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="detail-box">
-                    <h1>
-                      Проблема с компьютером?<br>
-                      Мы починим ваш компьютер
-                    </h1>
-                    <p>
-                      Для решения несложных проблем на выезде в нашей компании работает мобильный инженер, который приедет прямо к вам домой или в офис, быстро исследует ноутбук и поставит точный диагноз. Если это возможно, то устранит проблему прямо на месте. А если потребуется сложный ремонт, то с Вашего согласия специалист заберёт Ваш ноутбук в наш сервисный-центр и привезёт его обратно после ремонта.
-                    </p>
-                    <a href="">
-                      Читать далее
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="detail-box">
-                    <h1>
-                      Проблема с компьютером? <br>
-                      Мы починим ваш компьютер
-                    </h1>
-                    <p>
-                      Для решения несложных проблем на выезде в нашей компании работает мобильный инженер, который приедет прямо к вам домой или в офис, быстро исследует ноутбук и поставит точный диагноз. Если это возможно, то устранит проблему прямо на месте. А если потребуется сложный ремонт, то с Вашего согласия специалист заберёт Ваш ноутбук в наш сервисный-центр и привезёт его обратно после ремонта.
-                    </p>
-                    <a href="">
-                      Читать далее
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="detail-box">
-                    <h1>
-                      Проблема с компьютером? <br>
-                      Мы починим ваш компьютер
-                    </h1>
-                    <p>
-                      Для решения несложных проблем на выезде в нашей компании работает мобильный инженер, который приедет прямо к вам домой или в офис, быстро исследует ноутбук и поставит точный диагноз. Если это возможно, то устранит проблему прямо на месте. А если потребуется сложный ремонт, то с Вашего согласия специалист заберёт Ваш ноутбук в наш сервисный-центр и привезёт его обратно после ремонта.
-                    </p>
-                    <a href="">
-                      Читать далее
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel_btn_box">
-          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <span class="sr-only">Предыдущий</span>
-          </a>
-          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <span class="sr-only">Следующий</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- end slider section -->
+
+
+<section class="slider_section">
+  <div class="slider-bg">
+    <img src="{% static 'images/slider-bg.jpg' %}" alt="">
   </div>
 
+  <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      {% for i in slider %}
+        <li data-target="#customCarousel1" data-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+      {% endfor %}
+    </ol>
 
-  <!-- service section -->
+    <div class="carousel-inner">
+      {% for i in slider %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="detail-box">
+                  <h1>{{ i.name }}</h1>
+                  <p>{{ i.description }}</p>
+                  <a href="{{ i.get_absolute_url }}">{% trans 'Читать далее' %}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="carousel_btn_box">
+      <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <span class="sr-only">{% trans 'Предыдущий' %}</span>
+      </a>
+      <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <span class="sr-only">{% trans 'Следующий' %}</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- end slider section -->
+  </div>
+
+<!-- service section -->
 
   <section class="service_section layout_padding">
     <div class="service_container">
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            Наши <span>Услуги</span>
+            {% trans 'Наши' %}<span>{% trans 'Услуги' %}</span>
           </h2>
           <p>
-            Сломался Ваш любимый ноутбук?! Не беда, мы вам обязательно поможем! Мы починили более 5000 ноутбуков, починим и Ваш!
+            {% trans 'Сломался Ваш любимый ноутбук?! Не беда, мы вам обязательно поможем! Мы починили более 5000 ноутбуков, починим и Ваш!' %}
           </p>
         </div>
         <div class="row">
+          {% for i in service %}
           <div class="col-md-6 ">
             <div class="box ">
               <div class="img-box">
                 <img src="{% static 'images/s1.png' %}" alt="">
               </div>
+              
               <div class="detail-box">
-                <h5>
-                  Ремонт компьютера
-                </h5>
-                <p>
-                  "Ваш компьютер сломался? Мы вам поможем! Оперативный и качественный ремонт компьютеров любой сложности. Надежно восстановим работоспособность вашего устройства, устраним вирусы и повысим производительность. Обращайтесь к нам для быстрого и профессионального обслуживания вашего компьютера!"
-                </p>
-                <a href="">
-                  Читать далее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="{% static 'images/s2.png' %}" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Замена оборудования
-                </h5>
-                <p>
-                  "Пришло время обновить ваш компьютер? Мы предлагаем широкий выбор оборудования и профессиональную замену комплектующих! Повысьте производительность и функциональность вашего устройства с нами. Доверьтесь опыту наших специалистов и получите качественное обслуживание вашего компьютера уже сегодня!"
-                </p>
-                <a href="">
-                  Читать далее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="{% static 'images/s3.png' %}" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Восстановление данных
-                </h5>
-                <p>
-                  "Потеряли важные данные? Не беспокойтесь! Мы специализируемся на восстановлении данных с любых устройств и носителей. Независимо от причины потери – форматирование, вирусы или физические повреждения – мы вернем ваши файлы. Доверьтесь нам и восстановите ценные данные без лишних хлопот!"
-                </p>
-                <a href="">
-                  Читать далее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="{% static 'images/s4.png' %}" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Обновление программного обеспечения
-                </h5>
-                <p>
-                  "Хотите быть в курсе последних технологических новинок? Обновите программное обеспечение вашего компьютера с нами! Мы предлагаем профессиональное обновление операционных систем, драйверов и приложений, чтобы ваша система работала на максимальной производительности и была защищена от угроз. Обращайтесь к нам, чтобы получить актуальное и надежное программное обеспечение для вашего компьютера!"
 
+                <h5>
+                  {{i.name}}
+                </h5>
+                <p>
+                  {{i.description}}
                 </p>
-                <a href="">
-                  Читать далее
+                <a href="{{ i.get_absolute_url }}">
+                  {% trans 'Читать далее' %}
                 </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
               </div>
             </div>
           </div>
         </div>
         <div class="btn-box">
           <a href="">
-            Посмотреть все
+            {% trans 'Посмотреть все' %}
           </a>
         </div>
       </div>
@@ -286,25 +265,23 @@
   </section>
 
   <!-- end service section -->
+   <!-- about section -->
 
-  <!-- about section -->
-
-  <section class="about_section">
+  <section class="about_section layout_padding">
     <div class="container ">
       <div class="row">
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Мы предоставляем лучший сервис
+                {% trans 'Мы предоставляем лучший сервис' %}
               </h2>
             </div>
             <p>
-              "Мы гордимся предоставлением лучшего сервиса в области обслуживания компьютеров. Наши высококвалифицированные специалисты обеспечивают надежное и быстрое решение любых проблем с вашим устройством. Не упускайте возможность получить профессиональное обслуживание от лучших экспертов в индустрии. Доверьтесь нам, и ваш компьютер будет в надежных руках!"
-
+              {% trans 'Ремонт ноутбуков в Бишкеке в сервисном центре «IT Restart» выполняют профессионалы с многолетним опытом работы. Вы можете быть уверены, что ваше устройство не испортят горе-ремонтники! Мы единственный сервисный центр в Кыргызстане, который имеет авторизацию от известного производителя ноутбуков — Acer. Мы выполняем гарантийное(бесплатное) и пост-гарантийное обслуживание устройство этого производителя.' %}
             </p>
             <a href="">
-              Читать далее
+              {% trans 'Читать дальше' %}
             </a>
           </div>
         </div>
@@ -319,57 +296,69 @@
 
   <!-- end about section -->
 
-  <!-- why us section -->
+ <!-- why us section -->
 
-  <section class="why_us_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          почему выбрали нас
-        </h2>
+ <section class="why_us_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        {% trans 'Почему выбрали нас' %}
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box ">
+          <div class="img-box">
+            <img src="{% static 'images/w1.png' %}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              {% trans 'Бесплатная диагностика'%}
+            </h5>
+            <p>
+              {% trans '"У нас для вас отличная новость - предоставляем бесплатную диагностику вашего компьютера! Наши опытные специалисты проведут тщательную проверку вашего устройства, выявят любые проблемы и предложат наилучшие решения. Не теряйте время и деньги на самодиагностику - обратитесь к профессионалам и получите бесплатную диагностику уже сегодня!"' %}
+
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="{% static 'images/w1.png' %}" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Бесплатная диагностика
-              </h5>
-            </div>
+      <div class="col-md-4">
+        <div class="box ">
+          <div class="img-box">
+            <img src="{% static 'images/w2.png' %}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              {% trans 'Процесс быстрого ремонта' %}
+            </h5>
+            <p>
+              {% trans '"Наши специалисты гарантируют быстрый и эффективный ремонт вашего компьютера. Мы ценим ваше время, поэтому сразу приступаем к работе после диагностики. Наш опыт и профессиональное оборудование позволяют нам оперативно выявить и устранить неисправности. Мы уверены в качестве нашей работы и стремимся к тому, чтобы ваш компьютер вернулся к вам в отличном состоянии в кратчайшие сроки!"' %}
+
+            </p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="{% static 'images/w2.png' %}" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Процесс быстрого ремонта
-              </h5>
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box ">
+          <div class="img-box">
+            <img src="{% static 'images/w3.png' %}" alt="">
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="{% static 'images/w3.png' %}" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Гарантия низкой цены
-              </h5>
-            </div>
+          <div class="detail-box">
+            <h5>
+              {% trans 'Гарантия низкой цены' %}
+            </h5>
+            <p>
+              {% trans '"Мы гарантируем низкие цены на наши услуги по ремонту компьютеров. Наша цель - предоставить высококачественное обслуживание по доступным ценам для всех наших клиентов. Мы постоянно отслеживаем рыночные цены и стараемся предложить наиболее выгодные условия. Доверьтесь нам, и вы получите качественный ремонт компьютера по самой низкой цене!"' %}
+
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- end why us section -->
+<!-- end why us section -->
 
   <!-- client section -->
 
@@ -377,7 +366,7 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Что говорят наши клиенты
+          {% trans 'Что говорят наши клиенты' %}
         </h2>
       </div>
       <div class="carousel-wrap">
@@ -404,7 +393,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  Профессиональный подход к ремонту. Работают четко и быстро, результат превзошел мои ожидания.
+                  {% trans 'Профессиональный подход к ремонту. Работают четко и быстро, результат превзошел мои ожидания. ' %}
                 </p>
               </div>
             </div>
@@ -431,7 +420,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  Отличный сервис по ремонту техники. Мне удалось восстановить мой телевизор без лишних затрат, рекомендую эту компанию!
+                  {% trans 'Отличный сервис по ремонту техники. Мне удалось восстановить мой телевизор без лишних затрат, рекомендую эту компанию!' %}
                 </p>
               </div>
             </div>
@@ -458,7 +447,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  Нужно было заменить клавиатуру в макбуке. Все выполнили быстро и качественно. Никаких проблем после починки я не заметила. Очень довольна результатом.
+                  {% trans 'Нужно было заменить клавиатуру в макбуке. Все выполнили быстро и качественно. Никаких проблем после починки я не заметила. Очень довольна результатом.' %}
                 </p>
               </div>
             </div>
@@ -485,7 +474,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  Благодарен за качественный ремонт Макбука. Цены приятно удивили.
+                  {% trans 'Благодарен за качественный ремонт Макбука. Цены приятно удивили.' %}
                 </p>
               </div>
             </div>
@@ -497,48 +486,67 @@
 
   <!-- end client section -->
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
+ <!-- contact section -->
+ <section class="contact_section layout_padding">
 
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Связаться с нами
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-9 mx-auto">
-          <div class="form_container">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Имя" />
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Фамилия" />
-                </div>
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        {% trans 'Связаться с нами' %}
+      </h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9 mx-auto">
+        <div class="form_container">
+          <form method="post">
+            {% csrf_token %}
+            {% if form %}
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                {{ form.name.label_tag }}
+                {{ form.name }}
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <input type="email" class="form-control" placeholder="Электронная почта" />
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Номер телефона" />
-                </div>
+              <div class="form-group col-md-6">
+                {{ form.last_name.label_tag }}
+                {{ form.last_name }}
               </div>
-              <div class="form-group ">
-                <input type="text" class="message-box" placeholder="Сообщение" />
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                {{ form.email.label_tag }}
+                {{ form.email }}
               </div>
-              <div class="btn-box">
-                <button type="submit">Представлять на рассмотрение</button>
+              <div class="form-group col-md-6">
+                {{ form.phone.label_tag }}
+                {{ form.phone }}
               </div>
-            </form>
-          </div>
+            </div>
+            <div class="form-group ">
+              {{ form.message.label_tag }}
+              {{ form.message }}
+            </div>
+            <div class="btn-box">
+              <button type="submit">{% trans 'Представлять на рассмотрение' %}</button>
+            </div>
+          </form>
+          <hr>
+          {% endif %}
+          {% if messages %}
+          <div class="alert alert-success">
+           <ul>
+             {% for message in messages %}
+             <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+            </div>
+{% endif %}
         </div>
       </div>
     </div>
-  </section>
-  <!-- end contact section -->
+  </div>
+</section>
+<!-- end contact section -->
 
 
   <!-- footer section -->
@@ -548,10 +556,10 @@
         <div class="col-md-6 col-lg-3 footer-col">
           <div class="footer_detail">
             <h4>
-              О нас
+              {% trans 'О нас' %}
             </h4>
             <p>
-              "Мы - команда профессионалов в области обслуживания компьютеров с богатым опытом работы. Наша цель - обеспечить наших клиентов высококачественными услугами, от ремонта и обновления оборудования до восстановления данных и установки программного обеспечения. Мы гордимся нашей превосходной репутацией и стремимся к превосходству в каждом аспекте нашей работы. Доверьтесь нам для надежного и профессионального обслуживания вашего компьютера!"
+              {% trans '"Мы - команда профессионалов в области обслуживания компьютеров с богатым опытом работы. Наша цель - обеспечить наших клиентов высококачественными услугами, от ремонта и обновления оборудования до восстановления данных и установки программного обеспечения. Мы гордимся нашей превосходной репутацией и стремимся к превосходству в каждом аспекте нашей работы. Доверьтесь нам для надежного и профессионального обслуживания вашего компьютера!"' %}
 
 
 
@@ -559,17 +567,17 @@
 
             </p>
             <div class="footer_social">
-              <a href="">
+              <a href="https://facebook.com">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="https://twitter.com">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              <a href="https://instagram.com">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://whatsapp.com">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -577,23 +585,23 @@
         <div class="col-md-6 col-lg-2 mx-auto footer-col">
           <div class="footer_link_box">
             <h4>
-              Ссылки
+              {% trans 'Ссылки' %}
             </h4>
             <div class="footer_links">
-              <a class="active" href="">
-                Главная
+              <a class="active" href="{% url 'home' %}">
+                {% trans 'Главная' %}
               </a>
-              <a class="" href="">
-                Сервисы
+              <a class="" href="{% url 'service' %}">
+                {% trans 'Сервисы' %}
               </a>
-              <a class="" href="">
-                О нас
+              <a class="" href="{% url 'about' %}">
+                {% trans 'О нас' %}
               </a>
-              <a class="" href="">
-                Почему мы?
+              <a class="" href="{% url 'why' %}">
+                {% trans 'Почему мы?' %}
               </a>
-              <a class="" href="">
-                Связаться с нами
+              <a class="" href="{% url 'contact' %}">
+                {% trans 'Связаться с нами' %}
               </a>
             </div>
           </div>
@@ -601,19 +609,19 @@
         <div class="col-md-6 col-lg-3 footer-col">
           <div class="footer_contact">
             <h4>
-              Контактная информация
+              {% trans 'Контактная информация' %}
             </h4>
             <div class="contact_link_box">
               <p>
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Расположение
+                  {% trans 'Расположение' %}
                 </span>
               </p>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Вызов +999222222
+                  {% trans 'Вызов'%}: +9222222
                 </span>
               </a>
               <a href="">
@@ -625,13 +633,13 @@
               <p>
                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                 <span>
-                  Пон-Суб: 09.00 - 22.00 
+                  {% trans 'Пон-Суб:' %} 09.00 - 22.00 
                 </span>
               </p>
               <p>
                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                 <span>
-                  Воскресенье: закрыто
+                  {% trans 'Воскресенье: закрыто' %}
                 </span>
               </p>
             </div>
@@ -649,25 +657,28 @@
     <div class="footer-info">
       <div class="container">
         <p>
-          <!-- &copy; <span id="displayYear">Все права защищены</span> -->
+          &copy; <span id="displayYear">{% trans 'Все права защищены' %}</span> 
         </p>
       </div>
     </div>
   </footer>
   <!-- footer section -->
-
+  <script src="{% url 'javascript-catalog' %}"></script>
   <!-- jQery -->
   <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
   <!-- bootstrap js -->
   <script src="{% static 'js/bootstrap.js' %}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
+  
   <!-- custom js -->
   <script src="{% static 'js/custom.js' %}"></script>
   <!-- Google Map -->
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script> -->
   <!-- End Google Map -->
+    <!-- Your header code here -->
+  <!-- Bootstrap JS and dependencies -->
 
 </body>
 

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block slider %}
+{% endblock %}
+{% block service %}
+{% if slider %}
+<style type="text/css">
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 4px 10px 4px 10px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+<div class="container">
+	<h1>{{ slider.name }}</h1>
+<p>{{ slider.description }}</p>
+
+<div class="btn-box">
+ <a href="{% url 'contact' %}">{% trans 'Представлять на рассмотрение' %}</a>
+</div>
+</div>
+{% endif %}
+
+
+{% endblock %}
+{% block why %}
+{% endblock %}
+{% block client %}
+{% endblock %}
+{% block about %}
+{% endblock %}
+{% block contact %}
+{% endblock %}

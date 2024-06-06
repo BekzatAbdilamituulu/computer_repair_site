@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-22 09:38+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: core/settings.py:120
+msgid "Russia"
+msgstr "Орусча"
+
+#: core/settings.py:121
+msgid "Kyrgyz"
+msgstr "Кыргызча"
+
+#: service/models.py:4
+msgid "Name"
+msgstr "Аты"
+
+#: service/models.py:5
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: service/models.py:6
+msgid "Email"
+msgstr "Email"
+
+#: service/models.py:7
+msgid "Phone Number"
+msgstr "Тел.Номери"
+
+#: service/models.py:8
+msgid "Message"
+msgstr "Билдируу"
+
+#: service/models.py:9
+msgid "Date"
+msgstr "Дата"
+
+#: service/models.py:15
+msgid "Service"
+msgstr "Кызмат"
+
+#: service/models.py:16 service/models.py:23
+msgid "Description"
+msgstr "Баяндоо"
+
+#: service/models.py:22
+msgid "Slider"
+msgstr "Слайдер"
+
+#: service/templates/service/about.html:51
+#: service/templates/service/about.html:211
+#: service/templates/service/contact.html:54
+#: service/templates/service/contact.html:243
+#: service/templates/service/index.html:53
+#: service/templates/service/index.html:576
+#: service/templates/service/qa.html:51 service/templates/service/qa.html:239
+#: service/templates/service/service.html:52
+#: service/templates/service/service.html:234
+#: service/templates/service/why.html:52 service/templates/service/why.html:245
+msgid "Вызов"
+msgstr "Чалуу"
+
+#: service/templates/service/about.html:57
+#: service/templates/service/index.html:59
+#: service/templates/service/service.html:58
+msgid "Электронная почта"
+msgstr "Электрондук почта"
+
+#: service/templates/service/about.html:80
+#: service/templates/service/about.html:179
+#: service/templates/service/contact.html:83
+#: service/templates/service/contact.html:211
+#: service/templates/service/index.html:98
+#: service/templates/service/index.html:544
+#: service/templates/service/qa.html:80 service/templates/service/qa.html:207
+#: service/templates/service/service.html:82
+#: service/templates/service/service.html:202
+#: service/templates/service/why.html:81 service/templates/service/why.html:213
+msgid "Главная"
+msgstr "Башкы бет"
+
+#: service/templates/service/about.html:80
+#: service/templates/service/contact.html:83
+#: service/templates/service/index.html:98 service/templates/service/qa.html:80
+#: service/templates/service/service.html:88
+#: service/templates/service/why.html:81
+msgid "(текущий)"
+msgstr "(учурку)"
+
+#: service/templates/service/about.html:83
+#: service/templates/service/contact.html:86
+#: service/templates/service/index.html:101
+#: service/templates/service/index.html:177
+#: service/templates/service/qa.html:83
+#: service/templates/service/service.html:85
+#: service/templates/service/service.html:119
+#: service/templates/service/why.html:84
+msgid "Услуги"
+msgstr "Кызматтар"
+
+#: service/templates/service/about.html:86
+#: service/templates/service/about.html:146
+#: service/templates/service/about.html:185
+#: service/templates/service/contact.html:89
+#: service/templates/service/contact.html:178
+#: service/templates/service/contact.html:217
+#: service/templates/service/index.html:104
+#: service/templates/service/index.html:511
+#: service/templates/service/index.html:550
+#: service/templates/service/qa.html:86 service/templates/service/qa.html:174
+#: service/templates/service/qa.html:213
+#: service/templates/service/service.html:88
+#: service/templates/service/service.html:169
+#: service/templates/service/service.html:208
+#: service/templates/service/why.html:87 service/templates/service/why.html:180
+#: service/templates/service/why.html:219
+msgid "О нас"
+msgstr "Биз жонундо"
+
+#: service/templates/service/about.html:89
+#: service/templates/service/contact.html:92
+#: service/templates/service/index.html:107
+#: service/templates/service/qa.html:89 service/templates/service/why.html:90
+msgid "Почему мы"
+msgstr "Эмне учун биз"
+
+#: service/templates/service/about.html:92
+#: service/templates/service/about.html:191
+#: service/templates/service/contact.html:95
+#: service/templates/service/contact.html:116
+#: service/templates/service/contact.html:223
+#: service/templates/service/index.html:110
+#: service/templates/service/index.html:447
+#: service/templates/service/index.html:556
+#: service/templates/service/qa.html:92 service/templates/service/qa.html:219
+#: service/templates/service/service.html:94
+#: service/templates/service/service.html:214
+#: service/templates/service/why.html:93 service/templates/service/why.html:225
+msgid "Связаться с нами"
+msgstr "Биз менен байланышуу"
+
+#: service/templates/service/about.html:118
+#: service/templates/service/index.html:229
+msgid "Мы предоставляем лучший сервис"
+msgstr "Биз эң жакшы кызматты көрсөтөбүз"
+
+#: service/templates/service/about.html:122
+#: service/templates/service/index.html:233
+msgid ""
+"Ремонт ноутбуков в Бишкеке в сервисном центре «IT Restart» выполняют "
+"профессионалы с многолетним опытом работы. Вы можете быть уверены, что ваше "
+"устройство не испортят горе-ремонтники! Мы единственный сервисный центр в "
+"Кыргызстане, который имеет авторизацию от известного производителя ноутбуков "
+"— Acer. Мы выполняем гарантийное(бесплатное) и пост-гарантийное обслуживание "
+"устройство этого производителя."
+msgstr ""
+"Бишкектеги ноутбуктарды оңдоо IT Restart тейлөө борборунда жүргүзүлөт көп жылдык тажрыйбасы бар адистер. Сиздин экенине шектенбесеңиз болот  Аппаратты"
+"оңдоп-түзөөчүлөр бузбайт! Биз жалгыз тейлөө борборубуз"
+"Белгилүү ноутбук өндүрүүчүсүнөн уруксат алган Кыргызстан"
+"- Acer Кепилдик (акысыз) жана гарантиядан кийинки кызматтарды көрсөтөбүз"
+"бул өндүрүүчүдөн аппарат."""
+
+#: service/templates/service/about.html:125
+#: service/templates/service/index.html:236
+msgid "Читать дальше"
+msgstr "Кененирээк окуу"
+
+#: service/templates/service/about.html:149
+#: service/templates/service/contact.html:181
+#: service/templates/service/index.html:514
+#: service/templates/service/qa.html:177
+#: service/templates/service/service.html:172
+#: service/templates/service/why.html:183
+msgid ""
+"\"Мы - команда профессионалов в области обслуживания компьютеров с богатым "
+"опытом работы. Наша цель - обеспечить наших клиентов высококачественными "
+"услугами, от ремонта и обновления оборудования до восстановления данных и "
+"установки программного обеспечения. Мы гордимся нашей превосходной "
+"репутацией и стремимся к превосходству в каждом аспекте нашей работы. "
+"Доверьтесь нам для надежного и профессионального обслуживания вашего "
+"компьютера!\""
+msgstr "Биз - компьютер тейлөө тармагында чоң тажрыйбага ээ адистерден турган командабыз. Биздин максат - кардарларыбызды жогорку сапаттагы кызматтар менен камсыз кылуу, жабдууларды оңдоо жана жаңыртуудан тартып, маалыматтарды калыбына келтирүү жана программалык камсыздоону орнотууга чейин. Биз өзүнүн мыкты репутациясы менен сыймыктанабыз жана ишибиздин ар бир аспектинде мыктылыкка умтулабыз. Компьютериңизди ишенимдүү жана профессионалдуу тейлөө үчүн бизге ишениңиз!"
+
+#: service/templates/service/about.html:175
+#: service/templates/service/contact.html:207
+#: service/templates/service/index.html:540
+#: service/templates/service/qa.html:203
+#: service/templates/service/service.html:198
+#: service/templates/service/why.html:209
+msgid "Ссылки"
+msgstr "Шилтемелер"
+
+#: service/templates/service/about.html:182
+#: service/templates/service/contact.html:214
+#: service/templates/service/index.html:547
+#: service/templates/service/qa.html:210
+#: service/templates/service/service.html:205
+#: service/templates/service/why.html:216
+msgid "Сервисы"
+msgstr "Кызматтал"
+
+#: service/templates/service/about.html:188
+#: service/templates/service/contact.html:220
+#: service/templates/service/index.html:553
+#: service/templates/service/qa.html:216
+#: service/templates/service/service.html:91
+#: service/templates/service/service.html:211
+#: service/templates/service/why.html:222
+msgid "Почему мы?"
+msgstr "Эмне учун биз"
+
+#: service/templates/service/about.html:199
+#: service/templates/service/contact.html:231
+#: service/templates/service/index.html:564
+#: service/templates/service/qa.html:227
+#: service/templates/service/service.html:222
+#: service/templates/service/why.html:233
+msgid "Контактная информация"
+msgstr "Байланыш маалымат"
+
+#: service/templates/service/about.html:205
+#: service/templates/service/contact.html:237
+#: service/templates/service/index.html:570
+#: service/templates/service/qa.html:233
+#: service/templates/service/service.html:228
+#: service/templates/service/why.html:239
+msgid "Расположение"
+msgstr "Дарегибиз"
+
+#: service/templates/service/about.html:223
+#: service/templates/service/contact.html:255
+#: service/templates/service/index.html:588
+#: service/templates/service/qa.html:251
+#: service/templates/service/service.html:246
+#: service/templates/service/why.html:257
+msgid "Пон-Суб:"
+msgstr "Дүйшөмбү-Шем:"
+
+#: service/templates/service/about.html:229
+#: service/templates/service/contact.html:261
+#: service/templates/service/index.html:594
+#: service/templates/service/qa.html:257
+#: service/templates/service/service.html:252
+#: service/templates/service/why.html:263
+msgid "Воскресенье: закрыто"
+msgstr "Жекшемби: жабык"
+
+#: service/templates/service/about.html:247
+#: service/templates/service/contact.html:279
+#: service/templates/service/index.html:612
+#: service/templates/service/qa.html:275
+#: service/templates/service/service.html:270
+#: service/templates/service/why.html:281
+msgid "Все права защищены"
+msgstr "Бардык укуктар корголгон"
+
+#: service/templates/service/contact.html:151
+#: service/templates/service/index.html:482
+msgid "Представлять на рассмотрение"
+msgstr "Кароого тапшыруу"
+
+#: service/templates/service/index.html:146
+#: service/templates/service/index.html:200
+#: service/templates/service/service.html:142
+msgid "Читать далее"
+msgstr "Кененирээк окуу"
+
+#: service/templates/service/index.html:158
+msgid "Предыдущий"
+msgstr "Мурунку"
+
+#: service/templates/service/index.html:162
+msgid "Следующий"
+msgstr "Кийинки"
+
+#: service/templates/service/index.html:177
+#: service/templates/service/service.html:119
+msgid "Наши"
+msgstr "Биздин"
+
+#: service/templates/service/index.html:180
+#: service/templates/service/service.html:122
+msgid ""
+"Сломался Ваш любимый ноутбук?! Не беда, мы вам обязательно поможем! Мы "
+"починили более 5000 ноутбуков, починим и Ваш!"
+msgstr "Сүйүктүү ноутбугуңуз бузулдубу?! Капа болбоңуз, биз сөзсүз жардам беребиз! Биз 5000ден ашуун ноутбукту оңдодук, сиздин ноутбугуңузду да оңдойбуз!"
+
+#: service/templates/service/index.html:212
+#: service/templates/service/service.html:154
+msgid "Посмотреть все"
+msgstr "Баарын көрүү"
+
+#: service/templates/service/index.html:257
+#: service/templates/service/why.html:116
+msgid "Почему выбрали нас"
+msgstr "Эмне үчүн бизди тандадыңыз?"
+
+#: service/templates/service/index.html:268
+#: service/templates/service/why.html:127
+msgid "Бесплатная диагностика"
+msgstr "Акысыз диагностика"
+
+#: service/templates/service/index.html:271
+#: service/templates/service/why.html:130
+msgid ""
+"\"У нас для вас отличная новость - предоставляем бесплатную диагностику "
+"вашего компьютера! Наши опытные специалисты проведут тщательную проверку "
+"вашего устройства, выявят любые проблемы и предложат наилучшие решения. Не "
+"теряйте время и деньги на самодиагностику - обратитесь к профессионалам и "
+"получите бесплатную диагностику уже сегодня!\""
+msgstr "Бизде сиз үчүн эң сонун жаңылык бар - компьютериңизди акысыз диагностикадан өткөрөбүз! Биздин тажрыйбалуу адистер түзмөгүңүздү кылдат текшерип, ар кандай көйгөйлөрдү аныктап, эң мыкты чечимдерди сунушташат. Убактыңызды жана акчаңызды өз алдынча диагностикага коротпоңуз - адистерге кайрылып, бүгүн эле акысыз диагностика алыңыз!"
+
+#: service/templates/service/index.html:284
+#: service/templates/service/why.html:143
+msgid "Процесс быстрого ремонта"
+msgstr "Тез оңдоо процесси"
+
+#: service/templates/service/index.html:287
+#: service/templates/service/why.html:146
+msgid ""
+"\"Наши специалисты гарантируют быстрый и эффективный ремонт вашего "
+"компьютера. Мы ценим ваше время, поэтому сразу приступаем к работе после "
+"диагностики. Наш опыт и профессиональное оборудование позволяют нам "
+"оперативно выявить и устранить неисправности. Мы уверены в качестве нашей "
+"работы и стремимся к тому, чтобы ваш компьютер вернулся к вам в отличном "
+"состоянии в кратчайшие сроки!\""
+msgstr "Биздин адистер компьютериңизди тез жана натыйжалуу оңдоого кепилдик беришет. Биз сиздин убактыңызды баалайбыз, ошондуктан диагностикадан кийин дароо ишке киришебиз. Биздин тажрыйбабыз жана профессионалдык жабдуулар тез арада көйгөйлөрдү аныктоого жана жоюуга мүмкүндүк берет. Биз ишибиздин сапатына ишенебиз жана компьютериңизди эң кыска мөөнөттө мыкты абалда кайтарып берүүгө умтулабыз!"
+
+#: service/templates/service/index.html:300
+#: service/templates/service/why.html:159
+msgid "Гарантия низкой цены"
+msgstr "Төмөн баа кепилдиги"
+
+#: service/templates/service/index.html:303
+#: service/templates/service/why.html:162
+msgid ""
+"\"Мы гарантируем низкие цены на наши услуги по ремонту компьютеров. Наша "
+"цель - предоставить высококачественное обслуживание по доступным ценам для "
+"всех наших клиентов. Мы постоянно отслеживаем рыночные цены и стараемся "
+"предложить наиболее выгодные условия. Доверьтесь нам, и вы получите "
+"качественный ремонт компьютера по самой низкой цене!\""
+msgstr "Биз компьютерлерди оңдоо боюнча кызматтарыбызга төмөн бааларды кепилдейбиз. Биздин максат - бардык кардарларыбыз үчүн жогорку сапаттагы тейлөөнү жеткиликтүү баада камсыз кылуу. Биз рыноктогу бааларды тынымсыз көзөмөлдөп, эң жакшы шарттарды сунуштоого аракет кылабыз. Бизге ишениңиз, жана сиз компьютерди эң төмөнкү баада сапаттуу оңдотууга ээ болосуз!"
+
+#: service/templates/service/index.html:321
+msgid "Что говорят наши клиенты"
+msgstr "Биздин кардарлар эмне дейт"
+
+#: service/templates/service/index.html:348
+msgid ""
+"Профессиональный подход к ремонту. Работают четко и быстро, результат "
+"превзошел мои ожидания. "
+msgstr "Профессионалдуу мамиле менен оңдоо. Так жана тез иштешет, жыйынтык менин күткөнүмдөн да ашып түштү."
+
+#: service/templates/service/index.html:375
+msgid ""
+"Отличный сервис по ремонту техники. Мне удалось восстановить мой телевизор "
+"без лишних затрат, рекомендую эту компанию!"
+msgstr "Техниканы оңдоо боюнча мыкты сервис. Ноутубугумду кошумча чыгымдарсыз калыбына келтире алдым, бул компанияны сунуштайм!"
+
+#: service/templates/service/index.html:402
+msgid ""
+"Нужно было заменить клавиатуру в макбуке. Все выполнили быстро и "
+"качественно. Никаких проблем после починки я не заметила. Очень довольна "
+"результатом."
+msgstr "Макбуктун клавиатурасын алмаштыруу керек болчу. Баарын тез жана сапаттуу аткарышты. Оңдоп бүткөндөн кийин эч кандай көйгөй байкаган жокмун. Натыйжага абдан канааттандым."
+
+#: service/templates/service/index.html:429
+msgid "Благодарен за качественный ремонт Макбука. Цены приятно удивили."
+msgstr "Макбукту сапаттуу оңдогону үчүн ыраазымын. Баалары жагымдуу таң калтырды."
+
+#: service/templates/service/qa.html:113
+msgid "Часто задаваемые вопросы (FAQ)"
+msgstr "Көп берилүүчү суроолор"
+
+#: service/templates/service/qa.html:124
+msgid "Каковы наши тарифы на ремонт компьютеров?"
+msgstr "Компьютерди оңдоо боюнча биздин тарифтер кандай?"
+
+#: service/templates/service/qa.html:149
+msgid "Сколько времени занимает ремонт компьютера?"
+msgstr "Компьютерди оңдоого канча убакыт кетет?"
+
+#: service/templates/service/service.html:98
+msgid "Поищи здесь..."
+msgstr "Бул жерден издөө..."
+
+#: service/views.py:35
+msgid "Your message has been submitted successfully!"
+msgstr "Сиздин билдирүү ийгиликтүү тапшырылды!"
