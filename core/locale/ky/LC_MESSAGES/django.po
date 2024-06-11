@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-22 09:38+0600\n"
+"POT-Creation-Date: 2024-06-11 21:51+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,149 +17,127 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: core/settings.py:120
+
+#: core/settings.py:121
 msgid "Russia"
 msgstr "Орусча"
 
-#: core/settings.py:121
+#: core/settings.py:122
 msgid "Kyrgyz"
 msgstr "Кыргызча"
 
-#: service/models.py:4
+#: service/models.py:6 service/models.py:18
 msgid "Name"
 msgstr "Аты"
 
-#: service/models.py:5
+#: service/models.py:7
 msgid "Last Name"
 msgstr "Фамилия"
 
-#: service/models.py:6
+#: service/models.py:8 service/models.py:19
 msgid "Email"
 msgstr "Email"
 
-#: service/models.py:7
+#: service/models.py:9 service/models.py:20
 msgid "Phone Number"
 msgstr "Тел.Номери"
 
-#: service/models.py:8
+#: service/models.py:10 service/models.py:21
 msgid "Message"
 msgstr "Билдируу"
 
-#: service/models.py:9
+#: service/models.py:11 service/models.py:22
 msgid "Date"
 msgstr "Дата"
 
-#: service/models.py:15
+#: service/models.py:28
 msgid "Service"
 msgstr "Кызмат"
 
-#: service/models.py:16 service/models.py:23
+#: service/models.py:29 service/models.py:46
 msgid "Description"
 msgstr "Баяндоо"
 
-#: service/models.py:22
+#: service/models.py:37
+#, fuzzy
+#| msgid "Service"
+msgid "ServiceCategory"
+msgstr "Кызмат"
+
+#: service/models.py:45
 msgid "Slider"
 msgstr "Слайдер"
 
-#: service/templates/service/about.html:51
-#: service/templates/service/about.html:211
-#: service/templates/service/contact.html:54
-#: service/templates/service/contact.html:243
-#: service/templates/service/index.html:53
-#: service/templates/service/index.html:576
-#: service/templates/service/qa.html:51 service/templates/service/qa.html:239
-#: service/templates/service/service.html:52
-#: service/templates/service/service.html:234
-#: service/templates/service/why.html:52 service/templates/service/why.html:245
+#: service/templates/base.html:54 service/templates/base.html:633
 msgid "Вызов"
 msgstr "Чалуу"
 
-#: service/templates/service/about.html:57
-#: service/templates/service/index.html:59
-#: service/templates/service/service.html:58
+#: service/templates/base.html:60
 msgid "Электронная почта"
 msgstr "Электрондук почта"
 
-#: service/templates/service/about.html:80
-#: service/templates/service/about.html:179
-#: service/templates/service/contact.html:83
-#: service/templates/service/contact.html:211
-#: service/templates/service/index.html:98
-#: service/templates/service/index.html:544
-#: service/templates/service/qa.html:80 service/templates/service/qa.html:207
-#: service/templates/service/service.html:82
-#: service/templates/service/service.html:202
-#: service/templates/service/why.html:81 service/templates/service/why.html:213
+#: service/templates/base.html:98 service/templates/base.html:601
 msgid "Главная"
 msgstr "Башкы бет"
 
-#: service/templates/service/about.html:80
-#: service/templates/service/contact.html:83
-#: service/templates/service/index.html:98 service/templates/service/qa.html:80
-#: service/templates/service/service.html:88
-#: service/templates/service/why.html:81
-msgid "(текущий)"
-msgstr "(учурку)"
-
-#: service/templates/service/about.html:83
-#: service/templates/service/contact.html:86
-#: service/templates/service/index.html:101
-#: service/templates/service/index.html:177
-#: service/templates/service/qa.html:83
-#: service/templates/service/service.html:85
-#: service/templates/service/service.html:119
-#: service/templates/service/why.html:84
+#: service/templates/base.html:102 service/templates/base.html:199
+#: service/templates/service/service.html:15
 msgid "Услуги"
 msgstr "Кызматтар"
 
-#: service/templates/service/about.html:86
-#: service/templates/service/about.html:146
-#: service/templates/service/about.html:185
-#: service/templates/service/contact.html:89
-#: service/templates/service/contact.html:178
-#: service/templates/service/contact.html:217
-#: service/templates/service/index.html:104
-#: service/templates/service/index.html:511
-#: service/templates/service/index.html:550
-#: service/templates/service/qa.html:86 service/templates/service/qa.html:174
-#: service/templates/service/qa.html:213
-#: service/templates/service/service.html:88
-#: service/templates/service/service.html:169
-#: service/templates/service/service.html:208
-#: service/templates/service/why.html:87 service/templates/service/why.html:180
-#: service/templates/service/why.html:219
+#: service/templates/base.html:112 service/templates/base.html:568
+#: service/templates/base.html:607
 msgid "О нас"
 msgstr "Биз жонундо"
 
-#: service/templates/service/about.html:89
-#: service/templates/service/contact.html:92
-#: service/templates/service/index.html:107
-#: service/templates/service/qa.html:89 service/templates/service/why.html:90
+#: service/templates/base.html:117
 msgid "Почему мы"
 msgstr "Эмне учун биз"
 
-#: service/templates/service/about.html:92
-#: service/templates/service/about.html:191
-#: service/templates/service/contact.html:95
-#: service/templates/service/contact.html:116
-#: service/templates/service/contact.html:223
-#: service/templates/service/index.html:110
-#: service/templates/service/index.html:447
-#: service/templates/service/index.html:556
-#: service/templates/service/qa.html:92 service/templates/service/qa.html:219
-#: service/templates/service/service.html:94
-#: service/templates/service/service.html:214
-#: service/templates/service/why.html:93 service/templates/service/why.html:225
+#: service/templates/base.html:122 service/templates/base.html:502
+#: service/templates/base.html:613 service/templates/service/contact.html:23
+#: service/templates/service/why.html:116
 msgid "Связаться с нами"
 msgstr "Биз менен байланышуу"
 
-#: service/templates/service/about.html:118
-#: service/templates/service/index.html:229
+#: service/templates/base.html:127
+msgid "Отзывы"
+msgstr ""
+
+#: service/templates/base.html:132
+msgid "Поищи здесь..."
+msgstr "Бул жерден издөө..."
+
+#: service/templates/base.html:168 service/templates/base.html:222
+#: service/templates/service/service.html:38
+msgid "Читать далее"
+msgstr "Кененирээк окуу"
+
+#: service/templates/base.html:180
+msgid "Предыдущий"
+msgstr "Мурунку"
+
+#: service/templates/base.html:184
+msgid "Следующий"
+msgstr "Кийинки"
+
+#: service/templates/base.html:199 service/templates/service/service.html:15
+msgid "Наши"
+msgstr "Биздин"
+
+#: service/templates/base.html:202 service/templates/service/service.html:18
+msgid ""
+"Сломался Ваш любимый ноутбук?! Не беда, мы вам обязательно поможем! Мы "
+"починили более 5000 ноутбуков, починим и Ваш!"
+msgstr ""
+"Сүйүктүү ноутбугуңуз бузулдубу?! Капа болбоңуз, биз сөзсүз жардам беребиз! "
+"Биз 5000ден ашуун ноутбукту оңдодук, сиздин ноутбугуңузду да оңдойбуз!"
+
+#: service/templates/base.html:250 service/templates/service/about.html:23
 msgid "Мы предоставляем лучший сервис"
 msgstr "Биз эң жакшы кызматты көрсөтөбүз"
 
-#: service/templates/service/about.html:122
-#: service/templates/service/index.html:233
+#: service/templates/base.html:254
 msgid ""
 "Ремонт ноутбуков в Бишкеке в сервисном центре «IT Restart» выполняют "
 "профессионалы с многолетним опытом работы. Вы можете быть уверены, что ваше "
@@ -168,23 +146,120 @@ msgid ""
 "— Acer. Мы выполняем гарантийное(бесплатное) и пост-гарантийное обслуживание "
 "устройство этого производителя."
 msgstr ""
-"Бишкектеги ноутбуктарды оңдоо IT Restart тейлөө борборунда жүргүзүлөт көп жылдык тажрыйбасы бар адистер. Сиздин экенине шектенбесеңиз болот  Аппаратты"
-"оңдоп-түзөөчүлөр бузбайт! Биз жалгыз тейлөө борборубуз"
-"Белгилүү ноутбук өндүрүүчүсүнөн уруксат алган Кыргызстан"
-"- Acer Кепилдик (акысыз) жана гарантиядан кийинки кызматтарды көрсөтөбүз"
-"бул өндүрүүчүдөн аппарат."""
+"Бишкектеги ноутбуктарды оңдоо IT Restart тейлөө борборунда жүргүзүлөт көп "
+"жылдык тажрыйбасы бар адистер. Сиздин экенине шектенбесеңиз болот  "
+"Аппараттыоңдоп-түзөөчүлөр бузбайт! Биз жалгыз тейлөө борборубузБелгилүү "
+"ноутбук өндүрүүчүсүнөн уруксат алган Кыргызстан- Acer Кепилдик (акысыз) жана "
+"гарантиядан кийинки кызматтарды көрсөтөбүзбул өндүрүүчүдөн аппарат."
 
-#: service/templates/service/about.html:125
-#: service/templates/service/index.html:236
+#: service/templates/base.html:257
 msgid "Читать дальше"
 msgstr "Кененирээк окуу"
 
-#: service/templates/service/about.html:149
-#: service/templates/service/contact.html:181
-#: service/templates/service/index.html:514
-#: service/templates/service/qa.html:177
-#: service/templates/service/service.html:172
-#: service/templates/service/why.html:183
+#: service/templates/base.html:280 service/templates/service/why.html:15
+msgid "Почему выбрали нас"
+msgstr "Эмне үчүн бизди тандадыңыз?"
+
+#: service/templates/base.html:291 service/templates/service/why.html:26
+msgid "Бесплатная диагностика"
+msgstr "Акысыз диагностика"
+
+#: service/templates/base.html:294 service/templates/service/why.html:29
+msgid ""
+"\"У нас для вас отличная новость - предоставляем бесплатную диагностику "
+"вашего компьютера! Наши опытные специалисты проведут тщательную проверку "
+"вашего устройства, выявят любые проблемы и предложат наилучшие решения. Не "
+"теряйте время и деньги на самодиагностику - обратитесь к профессионалам и "
+"получите бесплатную диагностику уже сегодня!\""
+msgstr ""
+"Бизде сиз үчүн эң сонун жаңылык бар - компьютериңизди акысыз диагностикадан "
+"өткөрөбүз! Биздин тажрыйбалуу адистер түзмөгүңүздү кылдат текшерип, ар "
+"кандай көйгөйлөрдү аныктап, эң мыкты чечимдерди сунушташат. Убактыңызды жана "
+"акчаңызды өз алдынча диагностикага коротпоңуз - адистерге кайрылып, бүгүн "
+"эле акысыз диагностика алыңыз!"
+
+#: service/templates/base.html:307 service/templates/service/why.html:42
+msgid "Процесс быстрого ремонта"
+msgstr "Тез оңдоо процесси"
+
+#: service/templates/base.html:310 service/templates/service/why.html:45
+msgid ""
+"\"Наши специалисты гарантируют быстрый и эффективный ремонт вашего "
+"компьютера. Мы ценим ваше время, поэтому сразу приступаем к работе после "
+"диагностики. Наш опыт и профессиональное оборудование позволяют нам "
+"оперативно выявить и устранить неисправности. Мы уверены в качестве нашей "
+"работы и стремимся к тому, чтобы ваш компьютер вернулся к вам в отличном "
+"состоянии в кратчайшие сроки!\""
+msgstr ""
+"Биздин адистер компьютериңизди тез жана натыйжалуу оңдоого кепилдик беришет. "
+"Биз сиздин убактыңызды баалайбыз, ошондуктан диагностикадан кийин дароо ишке "
+"киришебиз. Биздин тажрыйбабыз жана профессионалдык жабдуулар тез арада "
+"көйгөйлөрдү аныктоого жана жоюуга мүмкүндүк берет. Биз ишибиздин сапатына "
+"ишенебиз жана компьютериңизди эң кыска мөөнөттө мыкты абалда кайтарып "
+"берүүгө умтулабыз!"
+
+#: service/templates/base.html:323 service/templates/service/why.html:58
+msgid "Гарантия низкой цены"
+msgstr "Төмөн баа кепилдиги"
+
+#: service/templates/base.html:326 service/templates/service/why.html:61
+msgid ""
+"\"Мы гарантируем низкие цены на наши услуги по ремонту компьютеров. Наша "
+"цель - предоставить высококачественное обслуживание по доступным ценам для "
+"всех наших клиентов. Мы постоянно отслеживаем рыночные цены и стараемся "
+"предложить наиболее выгодные условия. Доверьтесь нам, и вы получите "
+"качественный ремонт компьютера по самой низкой цене!\""
+msgstr ""
+"Биз компьютерлерди оңдоо боюнча кызматтарыбызга төмөн бааларды кепилдейбиз. "
+"Биздин максат - бардык кардарларыбыз үчүн жогорку сапаттагы тейлөөнү "
+"жеткиликтүү баада камсыз кылуу. Биз рыноктогу бааларды тынымсыз көзөмөлдөп, "
+"эң жакшы шарттарды сунуштоого аракет кылабыз. Бизге ишениңиз, жана сиз "
+"компьютерди эң төмөнкү баада сапаттуу оңдотууга ээ болосуз!"
+
+#: service/templates/base.html:345 service/templates/service/client.html:23
+msgid "Что говорят наши клиенты"
+msgstr "Биздин кардарлар эмне дейт"
+
+#: service/templates/base.html:372 service/templates/service/client.html:50
+msgid ""
+"Профессиональный подход к ремонту. Работают четко и быстро, результат "
+"превзошел мои ожидания. "
+msgstr ""
+"Профессионалдуу мамиле менен оңдоо. Так жана тез иштешет, жыйынтык менин "
+"күткөнүмдөн да ашып түштү."
+
+#: service/templates/base.html:399 service/templates/service/client.html:77
+msgid ""
+"Отличный сервис по ремонту техники. Мне удалось восстановить мой телевизор "
+"без лишних затрат, рекомендую эту компанию!"
+msgstr ""
+"Техниканы оңдоо боюнча мыкты сервис. Ноутубугумду кошумча чыгымдарсыз "
+"калыбына келтире алдым, бул компанияны сунуштайм!"
+
+#: service/templates/base.html:426 service/templates/service/client.html:104
+msgid ""
+"Нужно было заменить клавиатуру в макбуке. Все выполнили быстро и "
+"качественно. Никаких проблем после починки я не заметила. Очень довольна "
+"результатом."
+msgstr ""
+"Макбуктун клавиатурасын алмаштыруу керек болчу. Баарын тез жана сапаттуу "
+"аткарышты. Оңдоп бүткөндөн кийин эч кандай көйгөй байкаган жокмун. Натыйжага "
+"абдан канааттандым."
+
+#: service/templates/base.html:453 service/templates/service/client.html:131
+msgid "Благодарен за качественный ремонт Макбука. Цены приятно удивили."
+msgstr ""
+"Макбукту сапаттуу оңдогону үчүн ыраазымын. Баалары жагымдуу таң калтырды."
+
+#: service/templates/base.html:537 service/templates/service/contact.html:58
+#: service/templates/service/service_detail.html:12
+#: service/templates/service/servicecategory_list.html:24
+#: service/templates/service/slider_detail.html:27
+#: service/templates/service/why.html:151
+msgid "Представлять на рассмотрение"
+msgstr "Кароого тапшыруу"
+
+#: service/templates/base.html:571
 msgid ""
 "\"Мы - команда профессионалов в области обслуживания компьютеров с богатым "
 "опытом работы. Наша цель - обеспечить наших клиентов высококачественными "
@@ -193,211 +268,284 @@ msgid ""
 "репутацией и стремимся к превосходству в каждом аспекте нашей работы. "
 "Доверьтесь нам для надежного и профессионального обслуживания вашего "
 "компьютера!\""
-msgstr "Биз - компьютер тейлөө тармагында чоң тажрыйбага ээ адистерден турган командабыз. Биздин максат - кардарларыбызды жогорку сапаттагы кызматтар менен камсыз кылуу, жабдууларды оңдоо жана жаңыртуудан тартып, маалыматтарды калыбына келтирүү жана программалык камсыздоону орнотууга чейин. Биз өзүнүн мыкты репутациясы менен сыймыктанабыз жана ишибиздин ар бир аспектинде мыктылыкка умтулабыз. Компьютериңизди ишенимдүү жана профессионалдуу тейлөө үчүн бизге ишениңиз!"
+msgstr ""
+"Биз - компьютер тейлөө тармагында чоң тажрыйбага ээ адистерден турган "
+"командабыз. Биздин максат - кардарларыбызды жогорку сапаттагы кызматтар "
+"менен камсыз кылуу, жабдууларды оңдоо жана жаңыртуудан тартып, маалыматтарды "
+"калыбына келтирүү жана программалык камсыздоону орнотууга чейин. Биз өзүнүн "
+"мыкты репутациясы менен сыймыктанабыз жана ишибиздин ар бир аспектинде "
+"мыктылыкка умтулабыз. Компьютериңизди ишенимдүү жана профессионалдуу тейлөө "
+"үчүн бизге ишениңиз!"
 
-#: service/templates/service/about.html:175
-#: service/templates/service/contact.html:207
-#: service/templates/service/index.html:540
-#: service/templates/service/qa.html:203
-#: service/templates/service/service.html:198
-#: service/templates/service/why.html:209
+#: service/templates/base.html:597
 msgid "Ссылки"
 msgstr "Шилтемелер"
 
-#: service/templates/service/about.html:182
-#: service/templates/service/contact.html:214
-#: service/templates/service/index.html:547
-#: service/templates/service/qa.html:210
-#: service/templates/service/service.html:205
-#: service/templates/service/why.html:216
+#: service/templates/base.html:604
 msgid "Сервисы"
 msgstr "Кызматтал"
 
-#: service/templates/service/about.html:188
-#: service/templates/service/contact.html:220
-#: service/templates/service/index.html:553
-#: service/templates/service/qa.html:216
-#: service/templates/service/service.html:91
-#: service/templates/service/service.html:211
-#: service/templates/service/why.html:222
+#: service/templates/base.html:610
 msgid "Почему мы?"
 msgstr "Эмне учун биз"
 
-#: service/templates/service/about.html:199
-#: service/templates/service/contact.html:231
-#: service/templates/service/index.html:564
-#: service/templates/service/qa.html:227
-#: service/templates/service/service.html:222
-#: service/templates/service/why.html:233
+#: service/templates/base.html:621
 msgid "Контактная информация"
 msgstr "Байланыш маалымат"
 
-#: service/templates/service/about.html:205
-#: service/templates/service/contact.html:237
-#: service/templates/service/index.html:570
-#: service/templates/service/qa.html:233
-#: service/templates/service/service.html:228
-#: service/templates/service/why.html:239
+#: service/templates/base.html:627
 msgid "Расположение"
 msgstr "Дарегибиз"
 
-#: service/templates/service/about.html:223
-#: service/templates/service/contact.html:255
-#: service/templates/service/index.html:588
-#: service/templates/service/qa.html:251
-#: service/templates/service/service.html:246
-#: service/templates/service/why.html:257
+#: service/templates/base.html:645
 msgid "Пон-Суб:"
 msgstr "Дүйшөмбү-Шем:"
 
-#: service/templates/service/about.html:229
-#: service/templates/service/contact.html:261
-#: service/templates/service/index.html:594
-#: service/templates/service/qa.html:257
-#: service/templates/service/service.html:252
-#: service/templates/service/why.html:263
+#: service/templates/base.html:651
 msgid "Воскресенье: закрыто"
 msgstr "Жекшемби: жабык"
 
-#: service/templates/service/about.html:247
-#: service/templates/service/contact.html:279
-#: service/templates/service/index.html:612
-#: service/templates/service/qa.html:275
-#: service/templates/service/service.html:270
-#: service/templates/service/why.html:281
+#: service/templates/base.html:669
 msgid "Все права защищены"
 msgstr "Бардык укуктар корголгон"
 
-#: service/templates/service/contact.html:151
-#: service/templates/service/index.html:482
-msgid "Представлять на рассмотрение"
-msgstr "Кароого тапшыруу"
-
-#: service/templates/service/index.html:146
-#: service/templates/service/index.html:200
-#: service/templates/service/service.html:142
-msgid "Читать далее"
-msgstr "Кененирээк окуу"
-
-#: service/templates/service/index.html:158
-msgid "Предыдущий"
-msgstr "Мурунку"
-
-#: service/templates/service/index.html:162
-msgid "Следующий"
-msgstr "Кийинки"
-
-#: service/templates/service/index.html:177
-#: service/templates/service/service.html:119
-msgid "Наши"
-msgstr "Биздин"
-
-#: service/templates/service/index.html:180
-#: service/templates/service/service.html:122
+#: service/templates/service/about.html:27
 msgid ""
-"Сломался Ваш любимый ноутбук?! Не беда, мы вам обязательно поможем! Мы "
-"починили более 5000 ноутбуков, починим и Ваш!"
-msgstr "Сүйүктүү ноутбугуңуз бузулдубу?! Капа болбоңуз, биз сөзсүз жардам беребиз! Биз 5000ден ашуун ноутбукту оңдодук, сиздин ноутбугуңузду да оңдойбуз!"
+"Компания IT Restart с 2024 года находится в компьютерном секторе КР. "
+"Основной специализацией компании являются сложные ремонты компьютерной и "
+"бытовой техники в городе Бишкек."
+msgstr ""
+"IT Restart компаниясы 2024-жылдан бери Кыргыз Республикасынын компьютердик тармагында."
+"Компаниянын негизги адистиги - компьютерлерди жана компьютерлерди комплекстүү оңдоо «Бишкек шаарындагы тиричилик техникасы»."
 
-#: service/templates/service/index.html:212
-#: service/templates/service/service.html:154
-msgid "Посмотреть все"
-msgstr "Баарын көрүү"
+#: service/templates/service/about.html:31
+msgid "Ремонт компьютерной техники"
+msgstr "Компьютердик жабдууларды оңдоо"
 
-#: service/templates/service/index.html:257
-#: service/templates/service/why.html:116
-msgid "Почему выбрали нас"
-msgstr "Эмне үчүн бизди тандадыңыз?"
-
-#: service/templates/service/index.html:268
-#: service/templates/service/why.html:127
-msgid "Бесплатная диагностика"
-msgstr "Акысыз диагностика"
-
-#: service/templates/service/index.html:271
-#: service/templates/service/why.html:130
+#: service/templates/service/about.html:32
 msgid ""
-"\"У нас для вас отличная новость - предоставляем бесплатную диагностику "
-"вашего компьютера! Наши опытные специалисты проведут тщательную проверку "
-"вашего устройства, выявят любые проблемы и предложат наилучшие решения. Не "
-"теряйте время и деньги на самодиагностику - обратитесь к профессионалам и "
-"получите бесплатную диагностику уже сегодня!\""
-msgstr "Бизде сиз үчүн эң сонун жаңылык бар - компьютериңизди акысыз диагностикадан өткөрөбүз! Биздин тажрыйбалуу адистер түзмөгүңүздү кылдат текшерип, ар кандай көйгөйлөрдү аныктап, эң мыкты чечимдерди сунушташат. Убактыңызды жана акчаңызды өз алдынча диагностикага коротпоңуз - адистерге кайрылып, бүгүн эле акысыз диагностика алыңыз!"
+"Диагностика и ремонт Вашего ПК осуществляется от пяти минут в зависимости от "
+"неисправности и наличия запчастей. Также проводим любые варианты апгрейда. В "
+"кратчайшие сроки у нас можно собрать новый или б/у компьютер."
+msgstr ""
+"Компьютериңизди диагностикалоо жана оңдоого жараша беш мүнөткө созулат"
+"бузуулар жана запастык бөлүктөрдүн болушу. Биз ошондой эле бардык жаңылоо варианттарын ишке ашырабыз. "
+"Биз эң кыска убакыттын ичинде жаңы же колдонулган компьютерди чогулта алабыз."
 
-#: service/templates/service/index.html:284
-#: service/templates/service/why.html:143
-msgid "Процесс быстрого ремонта"
-msgstr "Тез оңдоо процесси"
+#: service/templates/service/about.html:34
+msgid "Ремонт ноутбуков"
+msgstr "Ноутбук оңдоо"
 
-#: service/templates/service/index.html:287
-#: service/templates/service/why.html:146
+#: service/templates/service/about.html:35
 msgid ""
-"\"Наши специалисты гарантируют быстрый и эффективный ремонт вашего "
-"компьютера. Мы ценим ваше время, поэтому сразу приступаем к работе после "
-"диагностики. Наш опыт и профессиональное оборудование позволяют нам "
-"оперативно выявить и устранить неисправности. Мы уверены в качестве нашей "
-"работы и стремимся к тому, чтобы ваш компьютер вернулся к вам в отличном "
-"состоянии в кратчайшие сроки!\""
-msgstr "Биздин адистер компьютериңизди тез жана натыйжалуу оңдоого кепилдик беришет. Биз сиздин убактыңызды баалайбыз, ошондуктан диагностикадан кийин дароо ишке киришебиз. Биздин тажрыйбабыз жана профессионалдык жабдуулар тез арада көйгөйлөрдү аныктоого жана жоюуга мүмкүндүк берет. Биз ишибиздин сапатына ишенебиз жана компьютериңизди эң кыска мөөнөттө мыкты абалда кайтарып берүүгө умтулабыз!"
+"Ноутбук может понадобиться в любой момент и в самый ответственный момент "
+"отказаться работать. У нас вы можете воспользоваться услугой «срочный "
+"ремонт» и уже через несколько часов вновь продолжить работать. В случае если "
+"вас интересует усиление (апгрейд) ноутбука, менеджер посоветует какие "
+"запчасти можно установить для ускорения вашего устройства."
+msgstr ""
+"Сизге ноутбук каалаган убакта жана эң маанилүү учурда керек болушу мүмкүн"
+"иштен баш тарт. Биз менен сиз шашылыш кызматын колдоно аласыз"
+"Оңдоо жана бир нече сааттан кийин кайра иштей берсеңиз. Сиз ноутбукуңузду бекемдөөгө (жаңыртууга) кызыкдарсыз, менеджер кайсынысын сунуштайт Запастык бөлүктөр аппаратыңызды тездетүү үчүн орнотсо болот."
 
-#: service/templates/service/index.html:300
-#: service/templates/service/why.html:159
-msgid "Гарантия низкой цены"
-msgstr "Төмөн баа кепилдиги"
+#: service/templates/service/about.html:37
+msgid "Ремонт телевизоров"
+msgstr "телевизор ремонттоо"
 
-#: service/templates/service/index.html:303
-#: service/templates/service/why.html:162
+#: service/templates/service/about.html:38
 msgid ""
-"\"Мы гарантируем низкие цены на наши услуги по ремонту компьютеров. Наша "
-"цель - предоставить высококачественное обслуживание по доступным ценам для "
-"всех наших клиентов. Мы постоянно отслеживаем рыночные цены и стараемся "
-"предложить наиболее выгодные условия. Доверьтесь нам, и вы получите "
-"качественный ремонт компьютера по самой низкой цене!\""
-msgstr "Биз компьютерлерди оңдоо боюнча кызматтарыбызга төмөн бааларды кепилдейбиз. Биздин максат - бардык кардарларыбыз үчүн жогорку сапаттагы тейлөөнү жеткиликтүү баада камсыз кылуу. Биз рыноктогу бааларды тынымсыз көзөмөлдөп, эң жакшы шарттарды сунуштоого аракет кылабыз. Бизге ишениңиз, жана сиз компьютерди эң төмөнкү баада сапаттуу оңдотууга ээ болосуз!"
+"У телевизоров есть несколько типовых неисправностей, таких как отсутствие "
+"изображения или звука. Чаще всего причиной данных неполадок являются не "
+"работающие линейки подсветки, матрицы или их компоненты, блок питания. Все "
+"эти дефекты наши инженеры устранят с лёгкостью и в кратчайшие сроки."
+msgstr ""
+"Телевизорлордун бир нече жалпы кемчиликтери бар, мисалы, жок"
+"сүрөт же үн. Көбүнчө, бул көйгөйлөр "
+"жумушчу арткы жарык линиялары, матрицалар же алардын компоненттери, электр менен камсыздоо. Баары"
+"Биздин инженерлер бул кемчиликтерди оңой жана эң кыска мөөнөттө жок кылат."
 
-#: service/templates/service/index.html:321
-msgid "Что говорят наши клиенты"
-msgstr "Биздин кардарлар эмне дейт"
+#: service/templates/service/about.html:40
+msgid "Ремонт POS-оборудования"
+msgstr "POS жабдууларын оңдоо"
 
-#: service/templates/service/index.html:348
+#: service/templates/service/about.html:41
 msgid ""
-"Профессиональный подход к ремонту. Работают четко и быстро, результат "
-"превзошел мои ожидания. "
-msgstr "Профессионалдуу мамиле менен оңдоо. Так жана тез иштешет, жыйынтык менин күткөнүмдөн да ашып түштү."
+"В нашем отделе продаж вы можете приобрести моноблок или принтер для любых "
+"задач, а также наша команда будет рада помочь в устранении неполадок с "
+"данным типом техники. Большинство запчастей есть в наличии, а если их не "
+"окажется, мы сможем в кратчайшие сроки привезти их с наших складов из-за "
+"границы."
+msgstr ""
+"Биздин сатуу бөлүмүндө сиз каалаган милдеттер үчүн моноблок же принтер сатып алсаңыз болот, "
+"жана биздин команда бул жабдыктардын түрүндөгү көйгөйлөрдү чечүүгө кубанычта болот. "
+"Запастык бөлүктөрдүн көпчүлүгү кампада бар, эгерде алар жок болсо, "
+"биз аларды чек аралардан биздин кампаларыбыздан мүмкүн болушунча тезирээк алып келе алабыз."
 
-#: service/templates/service/index.html:375
+#: service/templates/service/about.html:43
+msgid "Ремонт продукции Apple"
+msgstr "Apple продуктуларын оңдоо"
+
+#: service/templates/service/about.html:44
 msgid ""
-"Отличный сервис по ремонту техники. Мне удалось восстановить мой телевизор "
-"без лишних затрат, рекомендую эту компанию!"
-msgstr "Техниканы оңдоо боюнча мыкты сервис. Ноутубугумду кошумча чыгымдарсыз калыбына келтире алдым, бул компанияны сунуштайм!"
+"Наши инженеры специализируются на всех видах ремонта продукции Apple. Это "
+"как сложные ремонты, требующие наличия прямых рук и знания "
+"микросхемотехники, так и более простые – модульные ремонты. Средний опыт "
+"работы специалистов — 9 лет."
+msgstr ""
+"Биздин инженерлер Apple өнүмдөрүн оңдоонун бардык түрлөрүнө адистешкен. Бул "
+"түздөн-түз колду жана билимди талап кылган татаал оңдоолор, ошондой эле жөнөкөй "
+"модулдук оңдоолор. Орточо тажрыйба — 9 жыл."
 
-#: service/templates/service/index.html:402
+#: service/templates/service/about.html:46
+msgid "Ремонт гаджетов"
+msgstr "Гаджеттерди оңдоо"
+
+#: service/templates/service/about.html:47
 msgid ""
-"Нужно было заменить клавиатуру в макбуке. Все выполнили быстро и "
-"качественно. Никаких проблем после починки я не заметила. Очень довольна "
-"результатом."
-msgstr "Макбуктун клавиатурасын алмаштыруу керек болчу. Баарын тез жана сапаттуу аткарышты. Оңдоп бүткөндөн кийин эч кандай көйгөй байкаган жокмун. Натыйжага абдан канааттандым."
+"Ремонт гаджетов выполняется согласно рекомендациям производителя – мы "
+"применяем высококачественные комплектующие, всегда имеющиеся на складе "
+"компании. Сервис оснащен профессиональным оборудованием, позволяющим "
+"производить полноценную диагностику гаджетов и оперативно устранять поломки. "
+"В СЦ Compservice вы можете отремонтировать такие гаджеты как: телефоны, "
+"планшеты, гироскутеры, сигвеи, квадрокоптеры и многое другое."
+msgstr ""
+"Гаджетти оңдоо өндүрүүчүнүн сунуштарына ылайык жүргүзүлөт – биз дайыма "
+"кампада турган жогорку сапаттагы компоненттерди колдонобуз. Кызмат кесиптик "
+"жабдуулар менен жабдылган, бул гаджеттердин толук диагностикасын жүргүзүү "
+"жана бузулууларды тез арада оңдоо мүмкүнчүлүгүн берет. Comservice SCде сиз "
+"телефондорду, планшеттерди, ховерборддорду, Segways, квадрокоптерлерди жана башкаларды "
+"оңдой аласыз."
 
-#: service/templates/service/index.html:429
-msgid "Благодарен за качественный ремонт Макбука. Цены приятно удивили."
-msgstr "Макбукту сапаттуу оңдогону үчүн ыраазымын. Баалары жагымдуу таң калтырды."
+#: service/templates/service/about.html:49
+msgid "Вызвать инженера на дом"
+msgstr "Үйүңүзгө инженерди чакырыңыз"
 
-#: service/templates/service/qa.html:113
+#: service/templates/service/about.html:50
+msgid ""
+"Наши инженеры могут решить у вас дома такие неисправности как: не "
+"загружается компьютер, зависает компьютер, прокладка сетей, настройка сетей."
+msgstr ""
+"Биздин инженерлер үйүңүздөгү мындай көйгөйлөрдү чече алат: компьютер жүктөлбөйт, "
+"компьютер катып калат, тармактарды орнотуу, тармактарды жөндөө."
+
+#: service/templates/service/about.html:52
+msgid "Наши специалисты"
+msgstr "Биздин адистер"
+
+#: service/templates/service/about.html:53
+msgid ""
+"Инженеры компании обладают огромным опытом в разных областях ремонта "
+"компьютеров и настройке программного обеспечения. Советы и консультации в "
+"процессе работы с заказом предоставляются сотрудниками бесплатно."
+msgstr ""
+"Компаниянын инженерлери компьютерлерди оңдоонун жана программалык камсыздоону "
+"жөндөөнүн ар кандай тармактарында чоң тажрыйбага ээ. Заказ менен иштөө процесси "
+"убагында кеңештер жана консультациялар кызматкерлер тарабынан бекер берилет."
+
+#: service/templates/service/client.html:177
+msgid "ОСТАВЬТЕ СВОЙ ОТЗЫВ"
+msgstr "Пикириңизди калтырыңыз"
+
+#: service/templates/service/client.html:207
+msgid "Отправить"
+msgstr "Жөнөтүү"
+
+#: service/templates/service/qa.html:16
 msgid "Часто задаваемые вопросы (FAQ)"
-msgstr "Көп берилүүчү суроолор"
+msgstr "Көп берилүүчү суроолор (FAQ)"
 
-#: service/templates/service/qa.html:124
+#: service/templates/service/qa.html:27
 msgid "Каковы наши тарифы на ремонт компьютеров?"
-msgstr "Компьютерди оңдоо боюнча биздин тарифтер кандай?"
+msgstr "Компьютерлерди оңдоо боюнча биздин тарифтер кандай?"
 
-#: service/templates/service/qa.html:149
+#: service/templates/service/qa.html:52
 msgid "Сколько времени занимает ремонт компьютера?"
 msgstr "Компьютерди оңдоого канча убакыт кетет?"
 
-#: service/templates/service/service.html:98
-msgid "Поищи здесь..."
-msgstr "Бул жерден издөө..."
+#: service/templates/service/service.html:50
+msgid "Посмотреть все"
+msgstr "Баарын көрүү"
 
-#: service/views.py:35
+#: service/templates/service/servicecategory_list.html:19
+msgid "Подробнее"
+msgstr "Кененирээк маалымат"
+
+#: service/templates/service/why.html:76
+msgid "ГАРАНТИЯ"
+msgstr "Кепилдик"
+
+#: service/templates/service/why.html:79
+msgid ""
+"Сервисный центр IT Restrat предлагает гарантию на все виды работ потому, что "
+"мы уверены в качестве наших услуг и не боимся брать на себя ответственность. "
+"Для нас повторная поломка после ремонта – редкость, но мы всегда предлагаем "
+"гарантию, чтобы повысить доверие. Если в течение гарантийного срока "
+"устройство отказало в работе из-за неполадки, которую мы исправляли, "
+"специалисты сервиса продиагностируют и повторно отремонтируют гаджет "
+"бесплатно. Гарантийный срок составляет до 12 месяцев со дня выдачи "
+"устройства на руки."
+msgstr ""
+"IT Restrat Сервис борбору жумуштун бардык түрлөрүнө кепилдик берет, анткени "
+"биз өз кызматтарыбыздын сапатына ишенебиз жана жоопкерчиликти алуудан коркпойбуз. "
+"Биз үчүн оңдоп-түзөөдөн кийин кайра бузулуулар сейрек кездешет, бирок биз ар дайым "
+"ишенимди жогорулатуу үчүн кепилдик сунуштайбыз. Эгерде кепилдик мөөнөтүнүн ичинде "
+"аппарат биз оңдоп жаткан көйгөйлөрдүн айынан иштебей калса, "
+"кызмат адистери аппаратты диагноздоп, бузулууларды кайрадан акысыз оңдошот. "
+"Кепилдик мөөнөтү түзмөктү колго берген күндөн тартып 12 айга чейин."
+
+#: service/templates/service/why.html:82
+msgid "ПРЕДОСТАВЛЯЕМ ГАРАНТИЮ НА ЛЮБЫЕ РЕМОНТНЫЕ РАБОТЫ В БИШКЕКЕ!"
+msgstr "БИШКЕКТЕГИ КАНДАЙ БОЛБОСУН РЕМОНТ ИШТЕРИНЕ КЕПИЛДИК БЕРЕБИЗ!"
+
+#: service/templates/service/why.html:85
+msgid ""
+"После ремонта мы выдаем каждому клиенту квитанцию, где указываются дата "
+"выдачи устройства на руки и тип поломки. Важно сохранить документ, так как "
+"он является доказательством проведения ремонта у нас, его следует "
+"предъявлять в случае повторной поломки. При возникновении неисправности наши "
+"мастера оперативно продиагностируют устройство, определят причину и устранят "
+"проблему в кратчайшие сроки. Если поломка сложная и нужных деталей нет на "
+"складе, мы сразу же заказываем комплектующие."
+msgstr ""
+"Оңдоп-түзөөдөн кийин ар бир кардарга аппаратты берген датаны жана бузулуу түрүн "
+"көрсөткөн квитанция беребиз. Документти сактоо маанилүү, анткени бул биз тарабынан "
+"жүргүзүлгөн оңдоп-түзөөнүн далили болуп саналат жана кайра бузулган учурда "
+"көрсөтүлүшү керек. Бузулуулардын пайда болушунда, биздин адистер аппаратты тез арада "
+"диагностикалап, себебин аныктап, көйгөйдү мүмкүн болушунча тез арада жоюшат. Эгерде бузулуу "
+"татаал болсо жана керектүү бөлүктөр кампада жок болсо, биз дароо компонент терди заказ кылабыз."
+#: service/templates/service/why.html:88
+msgid "Почему стоит обратиться к нам:"
+msgstr "Эмне үчүн бизге кайрылыш керек:"
+
+#: service/templates/service/why.html:90
+msgid "клиент может обсудить детали и предстоящий ремонт по телефону;"
+msgstr "кардар телефон аркылуу деталдарды жана алдыдагы оңдоолорду талкуулай алат;"
+
+#: service/templates/service/why.html:91
+msgid "тщательная диагностика и профилактика устройства;"
+msgstr "кылдат диагностика жана аппараттын алдын алуу;"
+
+#: service/templates/service/why.html:92
+msgid "гарантийный талон до 12 месяцев и бесплатный ремонт в случае обращения;"
+msgstr "12 айга чейин кепилдик талону жана кайрылуу учурунда акысыз оңдоо;"
+
+#: service/templates/service/why.html:93
+msgid "профессиональный и современный подход."
+msgstr "кесиптик жана заманбап мамиле."
+
+#: service/templates/service/why.html:97
+msgid ""
+"У нас работают опытные и квалифицированные специалисты, отвечающие за "
+"качество своих услуг. Мы всегда консультируем клиента и обсуждаем все "
+"предстоящие вмешательства."
+msgstr ""
+"Бизде өз кызматтарынын сапатына жооптуу болгон тажрыйбалуу жана квалификациялуу "
+"адистер иштейт. Биз ар дайым кардарга кеңеш берип, бардык алдыдагы кийлигишүүлөрдү талкуулайбыз."
+
+#: service/views.py:24 service/views.py:50 service/views.py:86
+#: service/views.py:102
 msgid "Your message has been submitted successfully!"
 msgstr "Сиздин билдирүү ийгиликтүү тапшырылды!"
+
+#~ msgid "(текущий)"
+#~ msgstr "(учурку)"
