@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block slider %}
+{% endblock %}
+{% block service %}
+{% if service %}
+<style type="text/css">
+	h1, h2 {
+		text-align: center;
+	}
+</style>
+<div class="container">
+	<h1>{{ cat.name }}</h1>
+	{% for s in service %}
+<h2>{{ s.name }}</h2>
+<p>{{ s.description }}</p>
+ <a class="btn btn-secondary" href="{{s.get_absolute_url}}" role="button">{% trans 'Подробнее'%}</a>
+
+<a href=""></a>
+{% endfor %}
+
+ <a class="btn btn-secondary" href="{% url 'contact' %}" role="button">{% trans 'Представлять на рассмотрение' %}</a>
+<hr>
+</div>
+{% endif %}
+
+
+{% endblock %}
+{% block why %}
+{% endblock %}
+{% block client %}
+{% endblock %}
+{% block about %}
+{% endblock %}
+{% block contact %}
+{% endblock %}
